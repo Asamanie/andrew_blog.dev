@@ -26,6 +26,10 @@
 //     }
 // });
 
+Route::get('/', function()
+{
+    return "This is home";
+});
 
 Route::get('/resume', function()
 {
