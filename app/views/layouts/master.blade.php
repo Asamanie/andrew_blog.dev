@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-    <title>Welcome to my Blog</title>
+	<title>My blog</title>
 </head>
 <body>
 	@yield('content')
