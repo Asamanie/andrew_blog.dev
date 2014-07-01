@@ -10,6 +10,58 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+
+Route::get('/', function()
+{
+    return View::make('hello');
+});
+
+Route::get('/resume_portfolio', function()
+{
+    return View::make('resume_portfolio');
+});
+
+Route::get('/', function(){
+	return "we are home";
+});
+
+
+Route::get('/', 'HomeController@show');
+
+Route::resource('posts', 'PostsController');
+
+
+
+Route::get('/orm-test', function() {
+
+	// $posts = Post::all();
+
+	// foreach ($posts as $post) {
+	// 	echo $post->title . "<br>";
+	// 	echo $post->body . "<br>";
+	// }
+
+	// $post = Post::find(1);
+
+	// echo $post->title . "<br>";
+	// echo $post->body . "<br>";
+
+	// $post->title = "This is a NEW title";
+
+	// $post->save();
+
+	// return "Eloquent ORM is Eloquent";
+
+	$post = Post::find(1);
+
+	$post->delete();
+
+	return "Eloquent ORM is Eloquent";
+
+
+});
+
+
 // Route::get('/', function(){
 // 	return "we are home";
 // });
@@ -26,51 +78,46 @@
 //     }
 // });
 
-Route::get('/', function()
-{
-    return View::make('hello');
-});
-
-Route::get('/sayhello/{name}', function($name)
-{
-    if ($name == "Andrew")
-    {
-        return Redirect::to('/');
-    }
-    else
-    {
-        return View::make('temp.my-first-view')->with('name', $name);
-    }
-});
+// Route::get('/sayhello/{name}', function($name)
+// {
+//     if ($name == "Andrew")
+//     {
+//         return Redirect::to('/');
+//     }
+//     else
+//     {
+//         return View::make('temp.my-first-view')->with('name', $name);
+//     }
+// });
 
 
-Route::get('/resume', function()
-{
-    return "This is my resume";
-});
+// Route::get('/resume', function()
+// {
+//     return "This is my resume";
+// });
 
 
-Route::get('/portfolio', function()
-{
-    return "This is my portfolio";
-});
+// Route::get('/portfolio', function()
+// {
+//     return "This is my portfolio";
+// });
 
 
-Route::get('/rolldice', function()
-{
-    return View::make('temp.roll-dice');
-});
+// Route::get('/rolldice', function()
+// {
+//     return View::make('temp.roll-dice');
+// });
 
 
-Route::get('/rolldice/{guess}', function($guess) {
+// Route::get('/rolldice/{guess}', function($guess) {
 
-$random = rand(1,6);
+// $random = rand(1,6);
 
-$data = array(
-	'random' => $random,
-	'guess'  => $guess
-	);
+// $data = array(
+// 	'random' => $random,
+// 	'guess'  => $guess
+// 	);
 	
-	return View::make('temp.roll-dice')->with($data);
+// 	return View::make('temp.roll-dice')->with($data);
 	
-});
+// });
