@@ -32,13 +32,23 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
-		$post = new Post();
-		$post->title = Input::get('title');
-		$post->body = Input::get('body');
-		$post->save();
 
-		return Redirect::action('PostsController@index');
-		
+		$validator = Validator::make(Input::all(), Post::$rules);
+
+		if ($validator->fails())
+		{
+			return Redirect::back()->withInput()->withErrors($validator);
+		}
+		else
+		{	
+			$post = new Post();
+			$post->title = Input::get('title');
+			$post->body = Input::get('body');
+			$post->save();
+
+			return Redirect::action('PostsController@index');
+		}
+
 	}
 
 
@@ -61,6 +71,7 @@ class PostsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
+	// will allow user to edit blog post
 	public function edit($id)
 	{
 		return "show form for editing post: $id";
@@ -73,6 +84,7 @@ class PostsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
+	// will update the edited blog in the db
 	public function update($id)
 	{
 		//

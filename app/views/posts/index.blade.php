@@ -2,10 +2,13 @@
 
 @section('content')
 
+<h1>All my post</h1>
 @foreach ($posts as $post)
-	<p><h2>{{{ $post->title}}}</h2></p>
-	<p><h3>{{{ $post->body}}}</h3></p>
+
+	{{ link_to_action('PostsController@show', $post->title, array($post->id)) }}
+	<br>
+	@endforeach
 	<hr>
-@endforeach
+	{{link_to_action('PostsController@create', 'New Post') }}
 
 @stop
