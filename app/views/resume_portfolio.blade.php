@@ -8,15 +8,15 @@
         <meta name="author" content="">
 
         <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
         <!-- Fonts from Font Awsome -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
          <!-- Magnific popup -->
-        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="/css/magnific-popup.css">
         <!-- Custom styles for this template -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="/css/main.css">
         <!-- Color styles -->
-        <link rel="stylesheet" href="css/colors/blue.css">
+        <link rel="stylesheet" href="/css/colors/blue.css">
         <!-- Feature detection -->
         <script src="js/modernizr-2.6.2.min.js"></script>
         <!-- Fonts -->
@@ -42,6 +42,7 @@
             <li><a href="#page-experience">Experience</a></li>
             <li><a href="#page-portfolio">Portfolio</a></li>
             <li><a href="#page-contact">Contact</a></li>
+            <li><a href="#page-contact">Blog</a></li>
           </ul>
         </div>
       </div>

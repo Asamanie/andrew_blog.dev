@@ -2,6 +2,15 @@
 
 class PostsController extends \BaseController {
 
+	public function __construct()
+	{
+	    // call base controller constructor
+	    parent::__construct();
+
+	    // run auth filter before all methods on this controller except index and show
+	    $this->beforeFilter('auth.basic', array('except' => array('index', 'show')));
+	}
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -9,7 +18,7 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$posts = Post::all();
+		$posts = Post::paginate(4);
 		return View::make('posts.index')->with('posts', $posts);
 	}
 
@@ -21,7 +30,7 @@ class PostsController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('posts.create');
+		return View::make('posts.create-edit');
 	}
 
 
@@ -74,7 +83,8 @@ class PostsController extends \BaseController {
 	// will allow user to edit blog post
 	public function edit($id)
 	{
-		return "show form for editing post: $id";
+		$post = Post::findOrFail($id);
+		return View::make('posts.create-edit')->with('post', $post);
 	}
 
 
@@ -86,10 +96,35 @@ class PostsController extends \BaseController {
 	 */
 	// will update the edited blog in the db
 	public function update($id)
-	{
-		//
-	}
 
+	// $post = Post::findOrFail($id);
+
+	{
+		$post = new Post();
+
+		if ($id != null)
+		{
+			$post = Post::findOrFail($id);
+		}	
+
+		$validator = Validator::make(Input::all(), Post::$rules);
+
+		if ($validator->fails())
+		{
+			// show an error msg
+			Session::flash('errorMessage', 'Whoops... there was an error submitting your form');
+			return Redirect::back()->withInput()->withErrors($validator);
+		}
+		else
+		{	
+			$post->title = Input::get('title');
+			$post->body = Input::get('body');
+			$post->save();
+			// show success msg
+			Session::flash('successMessage', 'boom... submitted successfully!');
+			return Redirect::action('PostsController@index');
+		}
+	}
 
 	/**
 	 * Remove the specified resource from storage.
@@ -99,7 +134,11 @@ class PostsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		$post = Post::findOrFail($id);
+		$post->delete();
+		Session::flash('successMessage', 'Post delete successfully');
+
+		return Redirect::action('PostsController@index');
 	}
 
 
