@@ -18,11 +18,17 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$posts = Post::paginate(4);
+		if(Input::has('search'))
+		{
+			$search = Input::get('search');
+			$posts = Post::where("title", "LIKE", "%$search%")->paginate(4);
+		} else {
+			$posts = Post::paginate(4);
+		}
 		return View::make('posts.index')->with('posts', $posts);
 	}
 
-
+						
 	/**
 	 * Show the form for creating a new resource.
 	 *
@@ -139,6 +145,11 @@ class PostsController extends \BaseController {
 		Session::flash('successMessage', 'Post delete successfully');
 
 		return Redirect::action('PostsController@index');
+	}
+
+	public function user()
+	{
+		return $this->belongsTo('User');
 	}
 
 

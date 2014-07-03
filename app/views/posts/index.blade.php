@@ -9,6 +9,11 @@
 
 <table class="table table-hover">
 
+<tr>
+	<th>Title</th>
+	<th>Action</th>
+</tr>
+
 @foreach ($posts as $post)
 
 <tr>
@@ -24,6 +29,13 @@
 <p>
 	{{link_to_action('PostsController@create', 'Create New Post') }}
 </p>	
-	
+
+{{ Form::open(array('action' =>  'PostsController@index', 'class' => 'form-inline', 'method' => 'GET')) }}
+<div class="form-group">
+	{{ Form::text('search', null, array('placeholder' => 'Search Titles', 'class' => 'form-control col-lg-4')) }}
+	<button type="submit" class="btn btn-primary">Submit</button>
+</div>	
+{{ Form::close() }}
+
 
 @stop
