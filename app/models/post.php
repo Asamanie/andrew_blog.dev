@@ -9,7 +9,12 @@ class Post extends BaseModel {
 	static public $rules = 
 	[
 		'title' => 'required|max:100',
-		'body'  => 'required|max:500'
+		'body'  => 'required'
 	];
+
+	public function user()
+	{
+	    return $this->belongsTo('User');
+	}
 
 }

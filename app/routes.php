@@ -34,30 +34,11 @@ Route::resource('posts', 'PostsController');
 
 Route::get('/orm-test', function() {
 
-	// $posts = Post::all();
-
-	// foreach ($posts as $post) {
-	// 	echo $post->title . "<br>";
-	// 	echo $post->body . "<br>";
-	// }
-
-	// $post = Post::find(1);
-
-	// echo $post->title . "<br>";
-	// echo $post->body . "<br>";
-
-	// $post->title = "This is a NEW title";
-
-	// $post->save();
-
-	// return "Eloquent ORM is Eloquent";
-
 	$post = Post::find(1);
 
 	$post->delete();
 
 	return "Eloquent ORM is Eloquent";
-
 
 });
 

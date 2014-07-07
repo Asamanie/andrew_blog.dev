@@ -40,7 +40,7 @@ class PostTableSeeder extends Seeder {
 		for($i = 1; $i <10; $i++)
 		{
 			$post = new Post();
-			// $post->user_id = 1;
+			$post->user_id = 1;
 			$post->title = "Post Title $i";
 			$post->body = "Post body $i";
 			$post->save();
