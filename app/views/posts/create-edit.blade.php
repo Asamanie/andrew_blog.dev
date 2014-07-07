@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container-fluid" style="background-color:#007791">
+<div class="container" style="background-color:#007791">
 
 	@if (isset($post))
 	    <h1>Edit Post</h1>
