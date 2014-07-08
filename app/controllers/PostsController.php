@@ -8,7 +8,7 @@ class PostsController extends \BaseController {
 	    parent::__construct();
 
 	    // run auth filter before all methods on this controller except index and show
-	    $this->beforeFilter('auth.basic', array('except' => array('index', 'show')));
+	    $this->beforeFilter('auth', array('except' => array('index', 'show')));
 	}
 
 	/**
@@ -18,17 +18,18 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
+		$posts = Post::with('user')->paginate(4);
 		if(Input::has('search'))
 		{
 			$search = Input::get('search');
 			$posts = Post::where("title", "LIKE", "%$search%")->paginate(4);
+
 		} else {
 			$posts = Post::paginate(4);
 		}
 		return View::make('posts.index')->with('posts', $posts);
 	}
-
-						
+					
 	/**
 	 * Show the form for creating a new resource.
 	 *
@@ -52,20 +53,28 @@ class PostsController extends \BaseController {
 
 		if ($validator->fails())
 		{
+			Session::flash('errorMessage', 'There were errors submitting your form');
 			return Redirect::back()->withInput()->withErrors($validator);
 		}
 		else
 		{	
 			$post = new Post();
+
+			if  (Input::hasFile('image') && Input::file('image')->isValid()) 
+			{
+				$post->addUploadedImage(Input::file('image'));
+			}
+
+			$post->user_id = Auth::user()->id;
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
 			$post->save();
 
+			Session::flash('successMessage', 'Post created successfully');
 			return Redirect::action('PostsController@index');
 		}
 
 	}
-
 
 	/**
 	 * Display the specified resource.
@@ -78,7 +87,6 @@ class PostsController extends \BaseController {
 		$post = Post::find($id);
 		return View::make('posts.show')->with('post', $post);
 	}
-
 
 	/**
 	 * Show the form for editing the specified resource.
@@ -93,7 +101,6 @@ class PostsController extends \BaseController {
 		return View::make('posts.create-edit')->with('post', $post);
 	}
 
-
 	/**
 	 * Update the specified resource in storage.
 	 *
@@ -102,16 +109,8 @@ class PostsController extends \BaseController {
 	 */
 	// will update the edited blog in the db
 	public function update($id)
-
-	// $post = Post::findOrFail($id);
-
 	{
-		$post = new Post();
-
-		if ($id != null)
-		{
-			$post = Post::findOrFail($id);
-		}	
+		$post = Post::findOrFail($id);	
 
 		$validator = Validator::make(Input::all(), Post::$rules);
 
@@ -123,9 +122,14 @@ class PostsController extends \BaseController {
 		}
 		else
 		{	
+			if  (Input::hasFile('image') && Input::file('image')->isValid()) 
+			{
+				$post->addUploadedImage(Input::file('image'));
+			}
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
 			$post->save();
+			
 			// show success msg
 			Session::flash('successMessage', 'boom... submitted successfully!');
 			return Redirect::action('PostsController@index');

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="no-js">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
 <head>
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<title>My blog</title>
 </head>
 <body style="background-color:black">

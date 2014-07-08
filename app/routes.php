@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('/login',  'HomeController@showLogin');
+Route::post('/login', 'HomeController@doLogin');
+Route::get('/logout', 'HomeController@doLogout');
+
 Route::get('/', function()
 {
     return View::make('hello');
@@ -43,62 +47,3 @@ Route::get('/orm-test', function() {
 });
 
 
-// Route::get('/', function(){
-// 	return "we are home";
-// });
-
-// Route::get('/sayHello{name}', function($name)
-// {
-// 	if ($name == "Andrew")
-//     {
-//         return Redirect::to('/');
-//     }
-//     else
-//     {
-//         return "Hello, $name!";
-//     }
-// });
-
-// Route::get('/sayhello/{name}', function($name)
-// {
-//     if ($name == "Andrew")
-//     {
-//         return Redirect::to('/');
-//     }
-//     else
-//     {
-//         return View::make('temp.my-first-view')->with('name', $name);
-//     }
-// });
-
-
-// Route::get('/resume', function()
-// {
-//     return "This is my resume";
-// });
-
-
-// Route::get('/portfolio', function()
-// {
-//     return "This is my portfolio";
-// });
-
-
-// Route::get('/rolldice', function()
-// {
-//     return View::make('temp.roll-dice');
-// });
-
-
-// Route::get('/rolldice/{guess}', function($guess) {
-
-// $random = rand(1,6);
-
-// $data = array(
-// 	'random' => $random,
-// 	'guess'  => $guess
-// 	);
-	
-// 	return View::make('temp.roll-dice')->with($data);
-	
-// });

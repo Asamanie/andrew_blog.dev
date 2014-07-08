@@ -15,6 +15,34 @@ class HomeController extends BaseController {
 	|
 	*/
 
+	public function showLogin()
+	{
+		return View::make('login');
+	}
+
+	public function doLogin()
+	{
+		$email = Input::get('email');
+		$password = Input::get('password');
+
+		if (Auth::attempt(array('email' => $email, 'password' => $password)))
+		{
+			return Redirect::intended(action('PostsController@index'));
+		}
+		else
+		{
+			Session::flash('errorMessage', 'Email or Password were not found');
+			return Redirect::action('HomeController@login');
+		}
+	}
+
+	public function doLogout()
+	{
+		Auth::logout();
+		Session::flash('infoMesssage', 'You have logged out');
+		return Redirect::action('PostsController@index');
+	}
+
 	public function showWelcome()
 	{
 		return Redirect::action('HomeController@sayHello', ['Codeup']);
@@ -28,4 +56,11 @@ class HomeController extends BaseController {
 		return View::make('temp.my-first-view')->with($data);
 	}
 
+	
+		
+	
+	
+
+
 }
+
