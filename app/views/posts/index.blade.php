@@ -2,9 +2,15 @@
 
 @section('content')
 
-<header class"container">Testing</header>
-<div class="container" style="background-color:#007791">
+<header class"container" align="center" height="30px">Blog Header Testing</header>
 
+@if (Auth::check())
+ <div class="container">
+	{{ link_to_action('HomeController@doLogout', 'Logout', null, array('class'=> 'btn btn-danger btn-xs pull-right')) }}
+ </div>	
+@endif
+
+<div class="container" style="background-color:#007791">
 
 <h1>
 	All my post
