@@ -2,7 +2,7 @@
 
 @section('content')
 
-<header class"container" align="center" height="30px">Blog Header Testing</header>
+<!-- <header class"container" align="center">Blog Header Testing</header> -->
 
 @if (Auth::check())
  <div class="container">
@@ -10,7 +10,7 @@
  </div>	
 @endif
 
-<div class="container" style="background-color:#007791">
+<!-- <div class="container" style="background-color:#007791"> -->
 
 <h1>
 	All my post
