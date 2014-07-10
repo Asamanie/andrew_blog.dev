@@ -2,8 +2,6 @@
 
 @section('content')
 
-<!-- <div class="container" style="background-color:#007791"> -->
-
 	@if (isset($post))
 	    <h1>Edit Post</h1>
 	    {{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT', 'files' => true)) }}

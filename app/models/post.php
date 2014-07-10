@@ -34,4 +34,10 @@ class Post extends BaseModel {
 		return $purifier->purify($dirtyHTML);
 	}
 
+	public function excerpt()
+	{
+		preg_match('/^.{1,60}\b/s', $this->body, $match);
+		return $match[0] . '...';
+	}
+
 }

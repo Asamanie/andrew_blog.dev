@@ -7,7 +7,7 @@
 	<div class="container col-md-4">
 
 	{{ Form::open (array('action' => 'HomeController@doLogin', 'class' => 'form-inline' )) }}
-		<h2 class="form-signin-heading text-danger"></span>Please Sign In</h2>
+		<h2 class="form-signin-heading text-danger"></span>Hola welcome back!</h2>
 
 		<div class="form-group">
 			<input name="email" type="text" class="form-control" placeholder="Email" value="{{{ Input::old('email') }}}" required autofocus>

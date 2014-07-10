@@ -32,7 +32,7 @@ class HomeController extends BaseController {
 		else
 		{
 			Session::flash('errorMessage', 'Email or Password were not found');
-			return Redirect::action('HomeController@login');
+			return Redirect::action('HomeController@showLogin');
 		}
 	}
 
