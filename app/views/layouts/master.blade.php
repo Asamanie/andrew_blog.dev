@@ -5,6 +5,7 @@
 	<title>Did they drop the ball???</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/my_blog_style.css">
 	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">	
 	<script type="text/javascript">var switchTo5x=true;</script>
 	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
@@ -45,7 +46,6 @@
  			<div class="navbar-form navabr">
 				{{ link_to_action('HomeController@doLogout', 'Logout', null, array('class'=> 'btn btn-danger btn-xs pull-right')) }}
  			</div>	
-		
 	</form>
 	@endif
   </div>

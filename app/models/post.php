@@ -28,15 +28,15 @@ class Post extends BaseModel {
 
 	public function renderBody() 
 	{
-		$dirtyHTML = Parsedown::instance()->parse($this->body);
+		// $dirtyHTML = Parsedown::instance()->parse($this->body);
 		$config = HTMLPurifier_Config::createDefault();
 		$purifier = new HTMLPurifier($config);
-		return $purifier->purify($dirtyHTML);
+		return $purifier->purify($this->body);
 	}
 
 	public function excerpt()
 	{
-		preg_match('/^.{1,60}\b/s', $this->body, $match);
+		preg_match('/^.{1,60}\b/s', $excerpt, $match);
 		return $match[0] . '...';
 	}
 
