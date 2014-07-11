@@ -60,7 +60,7 @@
             <div class="row">
                 <header class="centered">
                     <h1>Andrew Samaniego</h1>
-                    <p>Statement of my Title</p>
+                    <p>Professional Web Designer and Developer</p>
                 </header>
                 <div class="social-icons">
                         <a href="https://www.linkedin.com/in/andrewxsamaniego/" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>  
@@ -79,14 +79,14 @@
                 <header class="section-header">
                     <h2 class="section-title">Personal Profile</h2>
                     <div class="spacer"></div>
-                    <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
+                    <p class="section-subtitle">A little about me</p>
                 </header>
             <div class="row">
               <div class="col-md-3">
                  <div class="profile" style="overflow: hidden;"><img src="img/andrew_s.jpg" alt="profile"/></div> 
               </div>
                <div class="col-md-9">
-                <p>Andrew is a innovative thinker, that craves a challenge and who is not afraid to work outside his comfort zone. I'm motivated team player who consistently aims to push revenue expectations and exceed goals. I possesses strong communication skills and the acumen to make sound business decisions. I'm somebody who can build easy rapport with clients, identify their exact needs and then present them with a wide range of services and solutions. Pragmatic and results orientated, with focus on the bottom line. I have a proven track record of achieving and exceeding the standards of performance set out for for me.</p>
+                <p>Hi, I'm Andrew , a freelance web designer based in the San Antonio area.  I'm a innovative thinker, that craves a challenge and who is not afraid to work outside my comfort zone. I'm a motivated team player who consistently aims to push expectations and exceed goals. I possesses strong communication skills and the acumen to make sound business decisions. I'm somebody who can build easy rapport with clients, identify their exact needs and then present them with a wide range of services and solutions. Pragmatic and results orientated, with focus on the bottom line. I have a proven track record of achieving and exceeding the standards of performance set out for for me.</p>
                 <!-- <p>Lorem ipsum dolor sit amet, vel no saepe invenire, magna similique vis no. Eam tollit gloriatur ad, quaeque euismod tractatos usu eu. Apeirian detraxit consequat vis ne, natum brute quidam nec no. Sit in accusamus aliquando, an his aeque iusto delicata.</p>
                 <p>Facer libris qui ea, mel ludus persius suscipiantur te. Eos soleat inimicus liberavisse at. Ex sit mazim soluta lobortis, ut nec bonorum splendide, mel tation erroribus principes eu. Cum ne vero albucius disputando. Et vidit movet sea. Falli appetere ut vix, eu offendit sapientem est. Postulant delicatissimi ex mea, ne modo nostrud salutandi usu, cu ignota dissentiunt his.</p>
                 <p>No wisi hendrerit per, ius ei stet oportere scribentur. Nam ex quando petentium, ei sea sonet timeam. Ex erat docendi urbanitas vix, equidem appetere vix an, mei legere offendit ponderum te. In per vidit dicta democritum, ut fuisset voluptua repudiandae eum. Cum at eius reformidans. In vocent dolores eos, ea vel idque soluta similique.</p>
@@ -102,31 +102,31 @@
                  <header class="section-header">
                     <h2 class="section-title"><span>Skills</span></h2>
                       <div class="spacer"></div>
-                    <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
+                    <p class="section-subtitle">A glance at my skill set</p>
                  </header>
             <div class="row">
               <div class="col-md-2">
-               <span class="chart" data-percent="75">
+               <span class="chart" data-percent="73">
                       <span class="percent"></span>
                       <h3>PHP</h3>
                </span>
             </div>
                <div class="col-md-2 ">
-               <span class="chart" data-percent="95">
+               <span class="chart" data-percent="88">
                       <span class="percent"></span>
                       <h3>HTML</h3>
                </span>
             </div>
                <div class="col-md-2">
-               <span class="chart" data-percent="85">
+               <span class="chart" data-percent="80">
                       <span class="percent"></span>
-                       <h3>CSS</h3>
+                       <h3>Laravel</h3>
                </span>
             </div>
                <div class="col-md-2">
-               <span class="chart" data-percent="70">
+               <span class="chart" data-percent="75">
                       <span class="percent"></span>
-                      <h3>JS</h3>
+                      <h3>Javascript</h3>
                </span>
             </div>
                <!-- <div class="col-md-2">
@@ -155,7 +155,7 @@
                 <header class="section-header">
                     <h2 class="section-title"><span>Education</span></h2>
                      <div class="spacer"></div>
-                <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
+                <p class="section-subtitle">Hittin the books</p>
                 </header>
                 <div class="row">
                  <div class="col-md-6">
@@ -185,7 +185,7 @@
                 <header class="section-header">
                     <h2 class="section-title"><span>Experience</span></h2>
                      <div class="spacer"></div>
-                    <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
+                    <p class="section-subtitle">What I've done in the past</p>
                 </header>
                 <div class="row">
                  <div class="col-md-4">
@@ -194,7 +194,8 @@
                       <h3>Codeup</h3>
                       <p>Baddie / San Antonio, TX / 2014 - Current</p>
                     </header>
-                      <p>Write a little paragraph of what I've learned and experienced at codeup for future career oppertunities.</p>
+                      <p>Codeup is a twelve week web development bootcamp in San Antonio, Texas, that teaches LAMP Stack (Linux, Apache, MySQL, PHP), JavaScript, jQuery, and the Laravel framework. 
+                        Students create a final capstone project to utilize development skills</p>
                   </article>
                 </div>
                   <div class="col-md-4">
@@ -225,7 +226,7 @@
                 <header class="section-header">
                     <h2 class="section-title"><span>Portfolio</span></h2>
                       <div class="spacer"></div>
-                    <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p> 
+                    <p class="section-subtitle">A taste of my work</p> 
                 </header>
            
                 <div id="grid-controls-wrapper">
@@ -282,7 +283,7 @@
               <header class="section-header">
                   <h2 class="section-title"><span>Contact</span></h2>
                     <div class="spacer"></div>
-                       <!-- <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p> -->
+                       <p class="section-subtitle">How to contact me</p> 
               </header>
         <div class="row">
           <div class="col-sm-5 contact-info">
