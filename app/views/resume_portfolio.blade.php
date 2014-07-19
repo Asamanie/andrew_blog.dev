@@ -60,7 +60,8 @@
             <div class="row">
                 <header class="centered">
                     <h1>Andrew Samaniego</h1>
-                    <p>Professional Web Developer</p>
+                    <!-- <p>Professional Web Developer</p> -->
+                    <p>sorry, this site is still under construction</p>
                 </header>
                 <div class="social-icons">
                         <a href="https://www.linkedin.com/in/andrewxsamaniego/" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>  
