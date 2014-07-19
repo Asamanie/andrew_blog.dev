@@ -60,14 +60,14 @@
             <div class="row">
                 <header class="centered">
                     <h1>Andrew Samaniego</h1>
-                    <p>Professional Web Designer and Developer</p>
+                    <p>Professional Web Developer</p>
                 </header>
                 <div class="social-icons">
                         <a href="https://www.linkedin.com/in/andrewxsamaniego/" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>  
                         <a href="https://github.com/Asamanie?tab=repositories" class="btn btn-round btn-clear btn-github"><i class="fa fa-github"></i></a>
                         <a href="https://www.facebook.com/andrew.x.samaniego" class="btn btn-round btn-clear btn-facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="https://dribbble.com/Andrew_Sam" class="btn btn-round btn-clear btn-dribbble"><i class="fa fa-dribbble"></i></a>
-                        <a href="https://twitter.com/andrewXsam" class="btn btn-round btn-clear btn-twitter"><i class="fa fa-twitter"></i></a>
+                        <!-- <a href="https://dribbble.com/Andrew_Sam" class="btn btn-round btn-clear btn-dribbble"><i class="fa fa-dribbble"></i></a> -->
+                        <a href="https://twitter.com/210AxS" class="btn btn-round btn-clear btn-twitter"><i class="fa fa-twitter"></i></a>
                 </div>
                 <a href="#page-contact" class="btn btn-default hire-me">Hire Me</a>
             </div>
@@ -87,10 +87,7 @@
               </div>
                <div class="col-md-9">
                 <p>Hi, I'm Andrew , a freelance web designer based in the San Antonio area.  I'm a innovative thinker, that craves a challenge and who is not afraid to work outside my comfort zone. I'm a motivated team player who consistently aims to push expectations and exceed goals. I possesses strong communication skills and the acumen to make sound business decisions. I'm somebody who can build easy rapport with clients, identify their exact needs and then present them with a wide range of services and solutions. Pragmatic and results orientated, with focus on the bottom line. I have a proven track record of achieving and exceeding the standards of performance set out for for me.</p>
-                <!-- <p>Lorem ipsum dolor sit amet, vel no saepe invenire, magna similique vis no. Eam tollit gloriatur ad, quaeque euismod tractatos usu eu. Apeirian detraxit consequat vis ne, natum brute quidam nec no. Sit in accusamus aliquando, an his aeque iusto delicata.</p>
-                <p>Facer libris qui ea, mel ludus persius suscipiantur te. Eos soleat inimicus liberavisse at. Ex sit mazim soluta lobortis, ut nec bonorum splendide, mel tation erroribus principes eu. Cum ne vero albucius disputando. Et vidit movet sea. Falli appetere ut vix, eu offendit sapientem est. Postulant delicatissimi ex mea, ne modo nostrud salutandi usu, cu ignota dissentiunt his.</p>
-                <p>No wisi hendrerit per, ius ei stet oportere scribentur. Nam ex quando petentium, ei sea sonet timeam. Ex erat docendi urbanitas vix, equidem appetere vix an, mei legere offendit ponderum te. In per vidit dicta democritum, ut fuisset voluptua repudiandae eum. Cum at eius reformidans. In vocent dolores eos, ea vel idque soluta similique.</p>
-                 <p>No wisi hendrerit per, ius ei stet oportere scribentur. Nam ex quando petentium, ei sea sonet timeam. Ex erat docendi urbanitas vix, equidem appetere vix an, mei legere offendit ponderum te. In per vidit dicta democritum, ut fuisset voluptua repudiandae eum.</p> -->
+                
               </div>
             </div>
       </div> 
@@ -106,7 +103,7 @@
                  </header>
             <div class="row">
               <div class="col-md-2">
-               <span class="chart" data-percent="73">
+               <span class="chart" data-percent="81">
                       <span class="percent"></span>
                       <h3>PHP</h3>
                </span>
@@ -124,7 +121,7 @@
                </span>
             </div>
                <div class="col-md-2">
-               <span class="chart" data-percent="75">
+               <span class="chart" data-percent="79">
                       <span class="percent"></span>
                       <h3>Javascript</h3>
                </span>
@@ -142,7 +139,7 @@
                </span>
             </div>
               <div class="col-md-2">
-              <span class="chart" data-percent="95">
+              <span class="chart" data-percent="91">
                     <span class="percent"></span>
                       <h3>Operations</h3>
                 </span>  
@@ -164,16 +161,16 @@
                       <h3>Texas Tech University</h3>
                       <p>Bachelor of Arts, Communications - <strong>Graduated:</strong> 2005</p>
                     </header>
-                      <p>I'm a grad and so on.......................</p>
+                      <p>I'm a graduate of the great Texas Tech University</p>
                   </article>
                 </div>
                 <div class="col-md-6">
                 <article class="education">
                   <header>
                     <h3>Codeup</h3>
-                    <p>Baddie of Codeup BC  - <strong>Graduated:</strong> 2014</p>
+                    <p>Web Dev Student<strong>Graduated:</strong> 2014</p>
                   </header>
-                    <p>Codeup is an immersive programming bootcamp that teaches non-technical people the skills to become a web developer. We teach the fundamentals of programming and web development through HTML, CSS, PHP, MySQL, JavaScript, and several frameworks, such as Laravel and jQuery, all in 12 weeks</p>
+                    <p>Codeup is an immersive programming bootcamp that teaches non-technical people the skills to become a web developer. We teach the fundamentals of programming and web development through HTML, CSS, PHP, MySQL, JavaScript, and several frameworks, such as Laravel and jQuery, all in 12 weeks.  Students complete the course with over 720 hours of hands on instruction.</p>
                 </article>
                 </div>
             </div>
