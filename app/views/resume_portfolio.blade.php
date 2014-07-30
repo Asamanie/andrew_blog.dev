@@ -61,7 +61,7 @@
                 <header class="centered">
                     <h1>Andrew Samaniego</h1>
                     <!-- <p>Professional Web Developer</p> -->
-                    <p>sorry, this site is still under construction</p>
+                    <p>Web Developer</p>
                 </header>
                 <div class="social-icons">
                         <a href="https://www.linkedin.com/in/andrewxsamaniego/" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>  
@@ -162,14 +162,14 @@
                       <h3>Texas Tech University</h3>
                       <p>Bachelor of Arts, Communications - <strong>Graduated:</strong> 2005</p>
                     </header>
-                      <p>I'm a graduate of the great Texas Tech University</p>
+                      <p>I'm a graduate of Texas Tech University where I recieved a degree in Business Communicatins with a minor in English.  Guns up!</p>
                   </article>
                 </div>
                 <div class="col-md-6">
                 <article class="education">
                   <header>
                     <h3>Codeup</h3>
-                    <p>Web Dev Student<strong>Graduated:</strong> 2014</p>
+                    <p>Web Dev Student - <strong>Graduated:</strong> 2014</p>
                   </header>
                     <p>Codeup is an immersive programming bootcamp that teaches non-technical people the skills to become a web developer. We teach the fundamentals of programming and web development through HTML, CSS, PHP, MySQL, JavaScript, and several frameworks, such as Laravel and jQuery, all in 12 weeks.  Students complete the course with over 720 hours of hands on instruction.</p>
                 </article>
