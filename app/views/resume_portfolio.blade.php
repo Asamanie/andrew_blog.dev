@@ -162,7 +162,7 @@
                       <h3>Texas Tech University</h3>
                       <p>Bachelor of Arts, Communications - <strong>Graduated:</strong> 2005</p>
                     </header>
-                      <p>I'm a graduate of Texas Tech University where I recieved a degree in Business Communicatins with a minor in English.  Guns up!</p>
+                      <p>I'm a graduate of Texas Tech University where I recieved a degree in Business Communications with a minor in English.  Guns up!</p>
                   </article>
                 </div>
                 <div class="col-md-6">
@@ -193,7 +193,7 @@
                       <p>Baddie / San Antonio, TX / 2014 - Current</p>
                     </header>
                       <p>Codeup is a twelve week web development bootcamp in San Antonio, Texas, that teaches LAMP Stack (Linux, Apache, MySQL, PHP), JavaScript, jQuery, and the Laravel framework. 
-                        Students create a final capstone project to utilize development skills</p>
+                        Students create a final project to utilize development skills</p>
                   </article>
                 </div>
                   <div class="col-md-4">
@@ -234,7 +234,7 @@
                   <li class="active filter"><a href="javascript:void(0)" data-filter="*">All</a></li>
                   <li class="filter" ><a href="javascript:void(0)" data-filter=".branding">Whack a mole</a></li>   
                   <li class="filter" ><a href="javascript:void(0)" data-filter=".design">More stuff</a></li>            
-                  <li class="filter"><a href="javascript:void(0)"  data-filter=".photography">Project</a></li>
+                  <li class="filter"><a href="javascript:void(0)"  data-filter=".photography">Final Project</a></li>
                   <li class="filter" ><a href="javascript:void(0)" data-filter=".web">Websites</a></li>
                 </ul>
               </div>
@@ -252,7 +252,7 @@
                         <a href="img/portfolio/large/04.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/04.png" alt="" ></a></li>
                       <li class="mix branding">
                         <a href="img/portfolio/large/05.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/05.png" alt="" ></a></li>
-                      <!-- <li class="mix design">
+                      <li class="mix design">
                         <a href="img/portfolio/large/06.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/06.png" alt="" ></a></li>
                       <li class="mix photography">
                         <a href="img/portfolio/large/07.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/07.png" alt="" ></a></li>
@@ -271,7 +271,7 @@
                       <li class="mix design">
                         <a href="img/portfolio/large/14.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/14.png" alt="" ></a></li>
                          <li class="mix branding">
-                        <a href="img/portfolio/large/15.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/15.png" alt="" ></a></li> -->
+                        <a href="img/portfolio/large/15.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/15.png" alt="" ></a></li>
                   </ul>
                 </div>
             </div>
