@@ -43,7 +43,7 @@
             <li><a href="#page-experience">Experience</a></li>
             <li><a href="#page-portfolio">Portfolio</a></li>
             <li><a href="#page-contact">Contact</a></li>
-            <li><a href="/posts">Blog</a></li>
+            <!-- <li><a href="/posts">Blog</a></li> -->
           </ul>
         </div>
       </div>
@@ -87,7 +87,7 @@
                  <div class="profile" style="overflow: hidden;"><img src="img/andrew_s.jpg" alt="profile"/></div> 
               </div>
                <div class="col-md-9">
-                <p>Hi, I'm Andrew , a freelance web designer based in the San Antonio area.  I'm a innovative thinker, that craves a challenge and who is not afraid to work outside my comfort zone. I'm a motivated team player who consistently aims to push expectations and exceed goals. I possesses strong communication skills and the acumen to make sound business decisions. I'm somebody who can build easy rapport with clients, identify their exact needs and then present them with a wide range of services and solutions. Pragmatic and results orientated, with focus on the bottom line. I have a proven track record of achieving and exceeding the standards of performance set out for for me.</p>
+                <p>A recent Junior Web Developer based in the San Antonio area. I am an innovative thinker, ready and willing to learn. I am a motivated team player who consistently aims to push expectations and excel at the work I provide. I possess strong communication skills with the ability to make sound business decisions. I am somebody who can build an easy rapport with clients, identify their exact needs and present them with a wide range of services and solutions.  Results orientated, with a passion on providing excellent customer service.  I have a proven track record of achieving and exceeding the standards of performance goals set out for for me.</p>
                 
               </div>
             </div>
@@ -110,7 +110,7 @@
                </span>
             </div>
                <div class="col-md-2 ">
-               <span class="chart" data-percent="88">
+               <span class="chart" data-percent="80">
                       <span class="percent"></span>
                       <h3>HTML</h3>
                </span>
@@ -199,10 +199,11 @@
                   <div class="col-md-4">
                   <article class="experience">
                     <header>
-                      <h3>Mobile Docotrs USA</h3>
+                      <h3>Mobile Doctors USA</h3>
                        <p>Branch Manager / San Antonio, TX / 2012 - 2013</p>
                     </header>
-                      <p>Directed the launch, business development, staff recruiting and hiring, purchasing and build out of a new medical practice. Managed a team of 18 personnel including, Doctors, Nurse Practitioners, Podiatrists and office support staff to serve the clinical needs of homebound patients in San Antonio and surrounding areas. This included staff training and coaching, team building and personnel performance evaluations. </p>
+                      <p>Directed the launch, business development, staff recruiting and hiring, purchasing and build out of a new medical practice. Managed a team of 18 personnel including, Doctors, Nurse Practitioners, Podiatrists and office support staff to serve the clinical needs of homebound patients in San Antonio and surrounding areas. 
+                        This included staff training and coaching, team building and personnel performance evaluations. </p>
                   </article>
                 </div>
                 <div class="col-md-4">
@@ -211,7 +212,8 @@
                     <h3>Enterprise Rent-A-Car</h3>
                      <p>Branch Manager / San Antonio, TX / 2005 - 2012</p>
                   </header>
-                    <p>Managed the daily operation and ..................</p>
+                    <p>I was in charge of customer service, employee development, sales, marketing, fleet and finances.  Managed the daily operation and sales of multiply facilities to run a million-dollar operation.  
+                      Was a leader to employees, managed inventory, and implemented comprehensive business plans to ensure future success. </p>
                 </article>
                 </div>
             </div>
