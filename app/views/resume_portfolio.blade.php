@@ -226,15 +226,15 @@
                 <header class="section-header">
                     <h2 class="section-title"><span>Portfolio</span></h2>
                       <div class="spacer"></div>
-                    <p class="section-subtitle">A taste of my work</p> 
+                    <p class="section-subtitle">A taste of my work (for demo purpose)</p> 
                 </header>
            
                 <div id="grid-controls-wrapper">
                 <ul class="nav nav-pills center-pills grid-controls">
                   <li class="active filter"><a href="javascript:void(0)" data-filter="*">All</a></li>
-                  <li class="filter" ><a href="javascript:void(0)" data-filter=".branding">Whack a mole</a></li>   
+                  <li class="filter" ><a href="javascript:void(0)" data-filter=".branding">Branding</a></li>   
                   <li class="filter" ><a href="javascript:void(0)" data-filter=".design">More stuff</a></li>            
-                  <li class="filter"><a href="javascript:void(0)"  data-filter=".photography">Final Project</a></li>
+                  <li class="filter"><a href="javascript:void(0)"  data-filter=".photography">Photos</a></li>
                   <li class="filter" ><a href="javascript:void(0)" data-filter=".web">Websites</a></li>
                 </ul>
               </div>
